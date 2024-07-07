@@ -1,0 +1,55 @@
+body{
+    font-family: 'Roboto', sans-serif; /* для работы гугл шрифтов "это свойство приводится на странице Google Fonts" */
+    
+    min-height: 100vh; /* footer к низу страницы */
+    margin: 0; padding: 0; /* убираем вертикальную прокрутку */
+
+    display: flex;
+    flex-direction: column; /* направление главной оси вниз */
+    justify-content: space-between; /* выравнивает элементы по горизонтали */
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red - позволяет вилеть границы элементов */
+  }
+
+.my-ph { /*параметры фотки*/ 
+  width: 500px;
+  height: 500px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none; /* Убираем стандартные маркеры */
+  }
+
+  .nav-link{
+    padding: 0 20px; /* Добавляем отступы между элементами списка */
+    line-height: 50px;  /* Добавляем отступы между элементами списка */
+    color: #829985;
+    text-decoration: none;
+    transition: 0.3s; /* Интерактивность при наведении.... вроде как для определения времени перехода между двумя состояниями элемента */
+  }
+
+  .section-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .section-item a:hover {
+    color: #ff0000;
+  }
+
+  html {
+    scroll-behavior: smooth;  /* плавная прокрутка */
+  }
+
+  /* <!-- комментарий в html --> */
